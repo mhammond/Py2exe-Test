@@ -1,3 +1,4 @@
 #!/usr/bin/env python
+import sys
 import foo
-foo.hello()
+sys.stdout.write("yay!\n")

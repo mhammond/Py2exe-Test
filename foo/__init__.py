@@ -1,6 +1,6 @@
-import sys
-print "have foo =", "foo" in sys.modules
 try:
-    from foo.foo import hello
+    #from foo.foo import *
+    import foo.problemchild
 except ImportError:
-    from foo import hello
+    #from foo import *
+    import problemchild

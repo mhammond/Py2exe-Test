@@ -11,8 +11,9 @@ setup(
 
     options = {
                   'py2exe': {
-                      'packages': '',
-                      'includes': '',
+# If the next line is in place, we get an ImportError from py2exe.
+# If it is not in place, we get a runtime ImportError
+                    'packages': 'foo',
                   }
               },
 )
